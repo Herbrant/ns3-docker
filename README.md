@@ -21,7 +21,7 @@ docker run -t -v <your-code-path>:/ns3/ns-3.38/scratch/<example-project> ghcr.io
 Also you can write a Dockerfile for your project using this docker image. 
 For instance:
 ```dockerfile
-FROM gchd...
+FROM ghcr.io/herbrant/ns3-docker:main
 
 RUN mkdir -p /ns3/ns-3.38/scratch/<your-project>
 COPY . /ns3/ns-3.38/scratch/<your-project>
